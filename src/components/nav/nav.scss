@@ -1,0 +1,85 @@
+$font-sans: "Open Sans", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+.tops {
+  position: relative;
+  height: 65px;
+  .topNav {
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    background-color: transparent;
+    transition: top 0.6s;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    .navall {
+      position: relative;
+      width: 950px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      .logo {
+        position: relative;
+        top: 0.5em;
+        img {
+          height: 40px;
+          width: 40px;
+          object-fit: contain;
+        }
+      }
+      .navs {
+        position: relative;
+        display: inline-flex;
+        .one {
+          ul {
+            position: relative;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            li {
+              position: relative;
+              font-family: $font-sans;
+              font-weight: 400;
+              margin-left: 1em;
+              padding: 0.3em;
+              padding-bottom: 0.3em;
+              cursor: pointer;
+              a {
+                position: relative;
+                text-decoration: none;
+                color: #000;
+                font-size: 14px;
+                &:hover {
+                  color: #ff8800;
+                }
+              }
+              &:hover {
+                border-bottom: 2px solid #000; // 64ffda
+              }
+            }
+          }
+        }
+        .two {
+          position: relative;
+          margin-left: 1em;
+          top: 1.5em;
+          a {
+            position: relative;
+            text-decoration: none;
+            font-family: $font-sans;
+            color: #000;
+            font-size: 14px;
+            border: 1px solid #000;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            &:hover {
+              background-color: rgb(24, 23, 23);
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

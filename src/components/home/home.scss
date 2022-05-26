@@ -22,14 +22,15 @@ $font-roboto: "Roboto", sans-serif;
         position: relative;
         font-family: $font-sans;
         font-size: clamp(14px, 5vw, 16px);
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.1;
+        color: #000;
       }
       .intro {
         position: relative;
-        margin-top: 4em;
-        margin-bottom: 4em;
-        width: 50%;
+        margin-top: 3.5em;
+        margin-bottom: 2.5em;
+        width: 70%;
 
         p {
           position: relative;
@@ -38,6 +39,7 @@ $font-roboto: "Roboto", sans-serif;
           color: RGBA(0, 0, 0, 0.6);
           span {
             color: #000;
+            font-weight: 700;
           }
         }
       }
@@ -53,9 +55,10 @@ $font-roboto: "Roboto", sans-serif;
         left: -0.1em;
         padding: 0;
         &.lighter {
-          top: 0.2em;
-          color: #000;
-          font-weight: 700 !important;
+          top: 0.4em;
+          color: #0000006e;
+          width: 70%;
+          font-weight: 900 !important;
         }
       }
       .but {
@@ -63,12 +66,13 @@ $font-roboto: "Roboto", sans-serif;
         text-decoration: none;
         color: #000;
         font-size: 14px;
+        font-weight: 600;
         font-family: $font-sans;
         border: 1px solid #000;
         padding: 0.75rem 1rem;
         border-radius: 4px;
         &:hover {
-          background-color: rgb(24, 23, 23);
+          background-color: #000;
           color: #fff;
         }
       }

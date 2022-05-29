@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { debounce } from "../utilities/debounce";
-import Logo from "../assets/images/hb.png";
+import Logo from "../assets/images/logo.png";
 import "./nav.scss";
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -29,7 +29,7 @@ const Navbar = () => {
       <div
         className="topNav"
         style={{
-          top: visible ? "0" : "-60px",
+          top: visible ? "0" : "-70px",
           backgroundColor:
             prevScrollPos < 40 ? "transparent" : "rgb(249 250 251 /1)",
           boxShadow:
@@ -38,10 +38,12 @@ const Navbar = () => {
       >
         <div className="navall">
           <div className="logo">
-            <img src={Logo} alt="HB" />
+            <a href="./">
+              <img src={Logo} alt="HB" />
+            </a>
           </div>
           <div className="navs">
-            <div className="one">
+            {/* <div className="one">
               <ul>
                 <li>
                   <a href="google.com">About</a>
@@ -53,9 +55,15 @@ const Navbar = () => {
                   <a href="google.com">Work</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className="two">
-              <a href="google.com">Resume</a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://docs.google.com/document/d/15uUTO9eqnG-i6eYGR0PFoGXw1I6mNlyJ/edit?usp=sharing&ouid=113876667940557824586&rtpof=true&sd=true"
+              >
+                Resume
+              </a>
             </div>
           </div>
         </div>

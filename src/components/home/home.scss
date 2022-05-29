@@ -1,15 +1,14 @@
-$font-sans: "Open Sans", sans-serif;
-$font-roboto: "Roboto", sans-serif;
+$font-sans: "Raleway", sans-serif;
 .app-v1 {
   position: relative;
-  background-color: rgb(249 250 251 /1);
+  background-color: #0a192f;
   width: 100%;
   min-height: 100vh;
   height: 100%;
   .wrapper {
     position: relative;
     margin: 0 auto;
-    width: 950px;
+    width: 1200px;
     .header {
       position: relative;
       height: 100%;
@@ -18,62 +17,244 @@ $font-roboto: "Roboto", sans-serif;
     .level1 {
       position: relative;
       margin-top: 3.5em;
-      h1 {
-        position: relative;
-        font-family: $font-sans;
-        font-size: clamp(14px, 5vw, 16px);
-        font-weight: 500;
-        line-height: 1.1;
-        color: #000;
-      }
-      .intro {
-        position: relative;
-        margin-top: 3.5em;
-        margin-bottom: 2.5em;
-        width: 70%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
 
-        p {
+      .leftside {
+        position: relative;
+        width: 70%;
+        h1 {
+          position: relative;
+          margin: 0px 0px 30px 4px;
+          font-family: $font-sans;
+          font-size: clamp(14px, 5vw, 16px);
+          font-weight: 500;
+          line-height: 1.1;
+          color: #64ffda;
+        }
+        .intro {
+          position: relative;
+          margin-top: 3.5em;
+          margin-bottom: 2.5em;
+          width: 80%;
+
+          p {
+            position: relative;
+            font-family: $font-sans;
+            line-height: 1.8;
+            color: #a8b2d1;
+            font-weight: 400;
+            span {
+              color: #64ffda;
+              font-weight: 600;
+            }
+          }
+        }
+
+        h2 {
           position: relative;
           font-family: $font-sans;
-          line-height: 1.8;
-          color: RGBA(0, 0, 0, 0.6);
-          span {
-            color: #000;
-            font-weight: 700;
+          font-weight: 900;
+          font-size: clamp(40px, 8vw, 50px);
+          line-height: 1.1;
+          color: #ccd6f6;
+          margin: 0;
+          left: -0.1em;
+          padding: 0;
+          &.lighter {
+            top: 0.4em;
+            color: #8892b0;
+            width: 80%;
+            font-weight: 900 !important;
+          }
+        }
+        .but {
+          position: relative;
+          text-decoration: none;
+          color: #64ffda;
+          font-size: 14px;
+          font-weight: 600;
+          font-family: $font-sans;
+          border: 1px solid #64ffda;
+          padding: 0.75rem 1rem;
+          border-radius: 4px;
+          &:hover {
+            background-color: rgba(100, 255, 218, 0.2);
+            color: #64ffda;
           }
         }
       }
-
-      h2 {
+      .rightside {
         position: relative;
-        font-family: $font-sans;
-        font-weight: 900;
-        font-size: clamp(40px, 8vw, 50px);
-        line-height: 1.1;
-        color: #000;
-        margin: 0;
-        left: -0.1em;
-        padding: 0;
-        &.lighter {
-          top: 0.4em;
-          color: #0000006e;
-          width: 70%;
-          font-weight: 900 !important;
+        width: 30%;
+
+        .images {
+          position: relative;
+          .img1 {
+            position: absolute;
+            img {
+              position: relative;
+              width: 100%;
+              // height: 500px;
+              bottom: 0em;
+              transition: bottom 20s ease-out;
+            }
+          }
+          .img2 {
+            position: relative;
+            img {
+              position: relative;
+              width: 100%;
+              max-height: 500px;
+              // height: 500px;
+              right: 2em;
+              bottom: 0.5em;
+              border-radius: 10px;
+              transition: bottom 20s ease-out;
+              object-fit: contain;
+              // &:hover {
+              //   position: relative;
+              //   transition: top 20s ease-in;
+              //   top: 0em;
+              // }
+            }
+          }
         }
       }
-      .but {
+    }
+  }
+}
+@media screen and (max-width: 868px) {
+  .app-v1 {
+    position: relative;
+    background-color: #0a192f;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    .wrapper {
+      position: relative;
+      margin: 0 auto;
+      width: 90%;
+      display: flex;
+      justify-self: center;
+      .header {
         position: relative;
-        text-decoration: none;
-        color: #000;
-        font-size: 14px;
-        font-weight: 600;
-        font-family: $font-sans;
-        border: 1px solid #000;
-        padding: 0.75rem 1rem;
-        border-radius: 4px;
-        &:hover {
-          background-color: #000;
-          color: #fff;
+        height: 100%;
+        width: 100%;
+      }
+      .level1 {
+        position: relative;
+        margin-top: 3.5em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .leftside {
+          position: relative;
+          width: 100%;
+          h1 {
+            position: relative;
+            margin: 0px 0px 30px 4px;
+            font-family: $font-sans;
+            font-size: clamp(14px, 5vw, 16px);
+            font-weight: 500;
+            line-height: 1.1;
+            color: #64ffda;
+          }
+          .intro {
+            position: relative;
+            margin-top: 3.5em;
+            margin-bottom: 2.5em;
+            width: 100%;
+
+            p {
+              position: relative;
+              font-family: $font-sans;
+              line-height: 1.8;
+              color: #a8b2d1;
+              font-size: 14px;
+              font-weight: 400;
+              top: -2em;
+              span {
+                color: #64ffda;
+                font-weight: 600;
+              }
+            }
+          }
+
+          h2 {
+            position: relative;
+            font-family: $font-sans;
+            font-weight: 900;
+            font-size: clamp(30px, 8vw, 20px);
+            line-height: 1.1;
+            margin: 0px 0px 30px 4px;
+            color: #ccd6f6;
+            margin: 0;
+            left: -0.1em;
+            padding: 0;
+            &.lighter {
+              top: 0.4em;
+              color: #8892b0;
+              width: 100%;
+              font-weight: 900 !important;
+            }
+          }
+          .but {
+            position: relative;
+            text-decoration: none;
+            color: #64ffda;
+            font-size: 14px;
+            font-weight: 600;
+            top: -2.7em;
+            font-family: $font-sans;
+            border: 1px solid #64ffda;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            &:hover {
+              background-color: rgba(100, 255, 218, 0.2);
+              color: #64ffda;
+            }
+          }
+        }
+        .rightside {
+          position: relative;
+          width: 100%;
+
+          .images {
+            position: relative;
+            .img1 {
+              position: absolute;
+              img {
+                position: relative;
+                width: 100%;
+                // height: 500px;
+                right: -1em;
+                bottom: -1em;
+                transition: bottom 20s ease-out;
+              }
+            }
+            .img2 {
+              position: relative;
+              img {
+                position: relative;
+                width: 100%;
+                max-height: 500px;
+                // height: 500px;
+                right: 0em;
+                bottom: 0.5em;
+                border-radius: 10px;
+                transition: bottom 20s ease-out;
+                object-fit: contain;
+                // &:hover {
+                //   position: relative;
+                //   transition: top 20s ease-in;
+                //   top: 0em;
+                // }
+              }
+            }
+          }
         }
       }
     }

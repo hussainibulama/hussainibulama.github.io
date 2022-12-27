@@ -60,7 +60,7 @@ const Navbar = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://docs.google.com/document/d/15uUTO9eqnG-i6eYGR0PFoGXw1I6mNlyJ/edit?usp=sharing&ouid=113876667940557824586&rtpof=true&sd=true"
+                href="https://docs.google.com/document/d/10Y_KMZT8J38q-GoY7AyCLk_vLFDgob81IE4oX7rRsAY/edit?usp=share_link"
               >
                 Resume
               </a>
